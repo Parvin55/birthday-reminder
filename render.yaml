@@ -1,7 +1,7 @@
 services:
   - type: web
     name: birthday-reminder
-    runtime: java
+    env: java
     rootDir: birthday_reminder
     buildCommand: ./mvnw clean install
     startCommand: java -jar target/*.jar
