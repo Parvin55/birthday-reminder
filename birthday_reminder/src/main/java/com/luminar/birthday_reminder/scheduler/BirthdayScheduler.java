@@ -21,6 +21,7 @@ public class BirthdayScheduler {
 	private EmailService emailService;
 
 	@Scheduled(cron = "0 0 10 * * *")
+	//@Scheduled(cron = "*/15 * * * * *")
 	public void checkBirthdays() {
 
 		System.out.println("Scheduler Running...");
