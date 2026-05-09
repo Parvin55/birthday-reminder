@@ -1,0 +1,5 @@
+package com.luminar.birthday_reminder.service;
+
+public class EmailService {
+
+}

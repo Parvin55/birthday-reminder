@@ -1,0 +1,26 @@
+package com.luminar.birthday_reminder.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.luminar.birthday_reminder.entity.BirthdayReminder;
+import com.luminar.birthday_reminder.repository.BirthdayRepository;
+
+@Controller
+public class BirthdayController {
+	
+	@Autowired
+	private BirthdayRepository repository;
+	
+	@GetMapping("/")
+	public String home(Model model) {
+		
+		model.addAttribute("birthday", new BirthdayReminder());
+		
+		model.addAttribute("birthdays", model)
+	}
+	
+
+}
