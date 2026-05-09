@@ -1,9 +1,0 @@
-.metadata/
-.settings/
-.classpath
-.project
-target/
-*.log
-*.zip
-.idea/
-*.iml
