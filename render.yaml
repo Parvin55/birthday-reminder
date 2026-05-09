@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: birthday-reminder
-    env: java
-    rootDir: birthday_reminder
-    buildCommand: ./mvnw clean install
-    startCommand: java -jar target/*.jar
-    plan: free
